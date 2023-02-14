@@ -11,6 +11,8 @@
 		E9045B4F299BF4AD00FF688A /* StoreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9045B44299BF4AD00FF688A /* StoreModule.framework */; };
 		E9045B54299BF4AD00FF688A /* StoreModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9045B53299BF4AD00FF688A /* StoreModuleTests.swift */; };
 		E9045B55299BF4AD00FF688A /* StoreModule.h in Headers */ = {isa = PBXBuildFile; fileRef = E9045B47299BF4AD00FF688A /* StoreModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9045D10299C107200FF688A /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9045D0E299C107200FF688A /* StoreViewController.swift */; };
+		E9045D11299C107200FF688A /* StoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9045D0F299C107200FF688A /* StoreViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		E9045B48299BF4AD00FF688A /* StoreModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = StoreModule.docc; sourceTree = "<group>"; };
 		E9045B4E299BF4AD00FF688A /* StoreModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9045B53299BF4AD00FF688A /* StoreModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreModuleTests.swift; sourceTree = "<group>"; };
+		E9045D0E299C107200FF688A /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		E9045D0F299C107200FF688A /* StoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		E9045B46299BF4AD00FF688A /* StoreModule */ = {
 			isa = PBXGroup;
 			children = (
+				E9045D0D299C105E00FF688A /* Scenes */,
 				E9045B47299BF4AD00FF688A /* StoreModule.h */,
 				E9045B48299BF4AD00FF688A /* StoreModule.docc */,
 			);
@@ -83,6 +88,15 @@
 				E9045B53299BF4AD00FF688A /* StoreModuleTests.swift */,
 			);
 			path = StoreModuleTests;
+			sourceTree = "<group>";
+		};
+		E9045D0D299C105E00FF688A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E9045D0E299C107200FF688A /* StoreViewController.swift */,
+				E9045D0F299C107200FF688A /* StoreViewController.xib */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9045D11299C107200FF688A /* StoreViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9045D10299C107200FF688A /* StoreViewController.swift in Sources */,
 				E9045B49299BF4AD00FF688A /* StoreModule.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +412,7 @@
 		E9045B5C299BF4AD00FF688A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77H8P22UE4;
@@ -412,6 +429,7 @@
 		E9045B5D299BF4AD00FF688A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77H8P22UE4;
